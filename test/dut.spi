@@ -1,0 +1,15 @@
+*Verilog-AMS-run.py should do the needful here.
+*.lib '/proj/db40/a0/staff/jcorn/rbdata/cad/models/spice/fets.lib' TT
+*.lib '/proj/db40/a0/staff/jcorn/rbdata/cad/models/spice/rdio.lib' N
+.temp "40"
+.param sim_temp = "40"
+.param wireopt=3
+
+
+*Comment this line out if using layout-extracted netlist.
+.lib '/proj/db40/a0/staff/jcorn/rbdata/cad/models/spice/fets.lib' pre_simu
+
+
+*Include the netlists you need here.
+.include "/user/jcorn/full-monte/test/od12i.sch"
+*.include "test/gen12i.sch"
